@@ -1,5 +1,5 @@
 function y_dot = robustDiff(y, dt, N)
-% differentiator using smooth noise-robust differentiator formula
+%ROBUSTDIFF differentiates using smooth noise-robust differentiation formula
 %
 %   y_dot = robustDiff(y, dt, N)
 %
@@ -7,7 +7,7 @@ function y_dot = robustDiff(y, dt, N)
 % y  - signal/vector to differentiate
 % dt - time or distance between points in y
 % N  - Number of points to use in differentiation.  This value must be
-%      positive odd integer greater than 5.
+%      positive odd integer greater than or equal 5.
 %
 %% Outputs
 % y_dot - differentiated signal/vector
@@ -17,10 +17,9 @@ function y_dot = robustDiff(y, dt, N)
 % points.  Both future information and past information are used to
 % calculate the derivative.  In signal processing, this is called non-causal.
 % The larger the value of N, the more high frequency noise is suppressed
-% unlike Savitsky-Golay (Lanczos differentiation) filters and Central
-% Difference methods (see references).  Note that the derivative is not
-% estimated at the edges of y.  This means that (N-1)/2 points at the
-% beginning and end of y are NaN.  See the example.
+% unlike Savitsky-Golay filters and Central Difference methods (see references).  
+% Note that the derivative is not estimated at the edges of y.  This means that
+% (N-1)/2 points at the beginning and end of y_dot are NaN.  See the example.
 %
 %% Example
 %   dt = 0.001; % sampling rate of 1000Hz 
@@ -53,7 +52,7 @@ function y_dot = robustDiff(y, dt, N)
 %
 
 %   Jason H. Nicholson jashale@yahoo.com
-%   $Revision: 1.0 $  $Date: 2014/03/02 16:15:00 $
+%   $Revision: 1.1 $  $Date: 2014/03/02 16:15:00 $
 
 %% Input Checking
 narginchk(3,3);
