@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding="utf-8"?>
 <toc version="2.0">
-	
-	<tocitem target="index.html">Smooth Robust Differentiators
-		<tocitem target="robustDiffDocumentation.html">robustDiff</tocitem>
-		<tocitem target="robustDiffOneSideDocumentation.html">robustDiffOneSide</tocitem>
-	</tocitem>
+
+    <tocitem target="index.html">Smooth Robust Differentiators</tocitem>
+	<tocitem target="robustDiffDocumentation.html">robustDiff</tocitem>
+    <tocitem target="robustDiffOneSideDocumentation.html">robustDiffOneSide</tocitem>
+
 </toc>
